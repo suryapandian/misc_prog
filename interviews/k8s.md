@@ -6,23 +6,24 @@ Design and implement a RESTful API that filters defined Kubernetes RBAC roles an
 
 ## Requirements:
 
-API should accept request payload containing details necessary to perform search and filtering.
-Subject names to be provided as a string, a regex pattern, or combination thereof.
-API should allow filtering by any combination of subjects (User, Group, Service account).
-API response should be in the format specified by the caller. Possible options: JSON, YAML.
-The API should run as a Kubernetes application.
+- API should accept request payload containing details necessary to perform search and filtering.
+- Subject names to be provided as a string, a regex pattern, or combination thereof.
+- API should allow filtering by any combination of subjects (User, Group, Service account).
+- API response should be in the format specified by the caller. Possible options: JSON, YAML.
+- The API should run as a Kubernetes application.
 
 ## Outcome:
 
-Return body to include ordered Subjects and their respective Roles and Cluster Roles. The order is specified by the caller, with one of the following options: 
-Alphabetically
-Object name string length.
+- Return body to include ordered Subjects and their respective Roles and Cluster Roles. The order is specified by the caller, with one of the following options: 
+    - Alphabetically
+    - Object name string length.
 
 You might also want to consider how to publish such API in a secure way, and representing how the API could accommodate for future changes and be backward compatible. 
-Deliverables might include: 
-Architecture / Design sketches / docs
-API implementation
-Sample resources for deployment of the project
+
+# Deliverables might include: 
+- Architecture / Design sketches / docs
+- API implementation
+- Sample resources for deployment of the project
 
 ## Notes:
 
